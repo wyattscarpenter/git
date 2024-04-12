@@ -141,7 +141,7 @@ test_expect_success 'subtest: a passing TODO test' '
 	EOF
 '
 
-test_expect_success 'subtest: 2 TODO tests, one passin' '
+test_expect_success 'subtest: 2 TODO tests, one passing' '
 	write_and_run_sub_test_lib_test partially-passing-todos <<-\EOF &&
 	test_expect_failure "pretend we have a known breakage" "false"
 	test_expect_success "pretend we have a passing test" "true"
